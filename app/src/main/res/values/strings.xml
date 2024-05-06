@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MobileFazTudo</string>
+    <string name="sua_senha">Senha</string>
+    <string name="confirme_sua_senha">Confirme sua senha</string>
+    <string name="seu_e_mail">E-mail</string>
+    <string name="seu_nome">Nome</string>
+    <string name="seu_sobrenome">Sobrenome</string>
+    <string name="telefone">Telefone</string>
+    <string name="cpf">CPF</string>
+    <string name="data_de_nascimento">Data de nascimento</string>
+    <string name="cep">CEP</string>
+    <string name="logradouro">Logradouro</string>
+    <string name="cidade">Cidade</string>
+    <string name="estado">Estado</string>
+
+</resources>

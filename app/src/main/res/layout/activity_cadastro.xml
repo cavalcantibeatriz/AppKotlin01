@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".view.CadastroActivity">
+
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:clickable="true"
+        android:elevation="100dp"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:elevation="100dp"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <!--NOME-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nomeTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nomeEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/seu_nome"
+                        android:inputType="text"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--SOBRENOME-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/sobrenomeTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/sobrenomeEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/seu_sobrenome"
+                        android:inputType="text"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--E-MAIL-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/emailTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/seu_e_mail"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--TELEFONE-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/telefoneTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/telefoneEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/telefone"
+                        android:inputType="textPhonetic"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--CPF-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cpfTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cpfEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cpf"
+                        android:inputType="text"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--DATA DE NASCIMENTO-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dataDeNascimentoTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/dataDeNascimentoEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/data_de_nascimento"
+                        android:inputType="text"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--CEP-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cepTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cepEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cep"
+                        android:inputType="text"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+<!--                LOGRADOURO-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/logradouroTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/logradouroEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/logradouro"
+                        android:inputType="text"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+<!--                CIDADE-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cidadeTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cidadeEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cidade"
+                        android:inputType="text"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+<!--                ESTADO-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/estadoTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/estadoEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/estado"
+                        android:inputType="text"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--QUERO TRABALHAR-->
+                <CheckBox
+                    android:id="@+id/contratarCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Quero contratar"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <!--QUERO CONTRATAR-->
+                <CheckBox
+                    android:id="@+id/trabalharCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Quero trabalhar"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <!--SENHA-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/senhaTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxCornerRadiusBottomEnd="0dp"
+                    app:boxCornerRadiusBottomStart="0dp"
+                    app:boxCornerRadiusTopEnd="0dp"
+                    app:boxCornerRadiusTopStart="0dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="6"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/senhaEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/sua_senha"
+                        android:inputType="textPassword"
+                        android:maxLength="6"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--CONFIRME SUA SENHA-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirmeSenhaTil"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:boxCornerRadiusBottomEnd="0dp"
+                    app:boxCornerRadiusBottomStart="0dp"
+                    app:boxCornerRadiusTopEnd="0dp"
+                    app:boxCornerRadiusTopStart="0dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="6"
+                    app:passwordToggleEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirmeSenhaEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/confirme_sua_senha"
+                        android:inputType="textPassword"
+                        android:maxLength="6"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="12dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--Botão de continuar-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/cadastroBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:width="200dp"
+                    android:background="@drawable/border_buttom"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text="Continuar"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </ScrollView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
